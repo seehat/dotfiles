@@ -57,6 +57,7 @@ install ucspi-tcp # `tcpserver` et al.
 install webkit2png
 install xpdf
 install zopfli
+install ssh-copy-id
 
 install homebrew/versions/lua52
 
