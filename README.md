@@ -89,6 +89,21 @@ You could also install native apps with [`brew cask`](https://github.com/phinze/
 brew bundle ~/Caskfile
 ```
 
+### Sublime Text 3 - Installed Packages
+
+- ApacheConf
+- ApplySyntax
+- CSS3
+- Default File Type
+- EditorConfig
+- Emmet
+- GitGutter
+- JavaScriptNext - ES6 Syntax
+- MarkdownEditing
+- Puppet
+- Sass
+- SideBarEnhancements
+- Clickable URLs
 
 
 ## Thanks to…

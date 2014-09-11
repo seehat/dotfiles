@@ -1,0 +1,59 @@
+{
+  "bold_folder_labels": true,
+  "close_windows_when_empty": true,
+  "color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
+  "default_encoding": "UTF-8",
+  "dictionary": "Packages/Dictionaries/German_de_DE.dic",
+  "draw_indent_guides": true,
+  "draw_white_space": "selection",
+  "file_exclude_patterns":
+  [
+    ".DS_Store",
+    "*.lib",
+    "*.log"
+  ],
+  "flatland_square_tabs": true,
+  "folder_exclude_patterns":
+  [
+    ".git",
+    ".bundle",
+    ".sass-cache",
+    ".svn",
+    ".hg",
+    "node_modules"
+  ],
+  "font_size": 12,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
+  [
+    "Drupal",
+    "Vintage",
+    "Markdown"
+  ],
+  "indent_guide_options":
+  [
+    "draw_normal",
+    "draw_active"
+  ],
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "match_brackets": true,
+  "match_brackets_angle": true,
+  "match_brackets_braces": true,
+  "match_brackets_content": true,
+  "match_brackets_square": true,
+  "scroll_past_end": true,
+  "scroll_speed": 2,
+  "show_full_path": true,
+  "show_minimap": false,
+  "spell_check": false,
+  "tab_size": 2,
+  "theme": "Flatland Dark.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "use_simple_full_screen": true,
+  "wide_caret": true,
+  "word_wrap": true,
+  "show_encoding": true,
+  "show_line_endings": true
+}
