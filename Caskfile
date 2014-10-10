@@ -17,3 +17,4 @@ cask install transmission 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install vlc 2> /dev/null
 cask install namechanger 2> /dev/null
+cask install qlmarkdown 2> /dev/null

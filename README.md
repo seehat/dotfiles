@@ -105,6 +105,11 @@ brew bundle ~/Caskfile
 - SideBarEnhancements
 - Clickable URLs
 
+### Further tools I use
+
+- Arsync
+
+
 
 ## Thanks to…
 
