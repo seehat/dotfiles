@@ -1,20 +1,20 @@
+#!/usr/bin/env bash
+
 # Install native apps
 # Usage: `brew bundle Caskfile`
 
-install caskroom/cask/brew-cask
-tap caskroom/versions
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 
-cask install dropbox 2> /dev/null
-cask install google-chrome 2> /dev/null
-cask install imagealpha 2> /dev/null
-cask install imageoptim 2> /dev/null
-cask install iterm2 2> /dev/null
-cask install miro-video-converter 2> /dev/null
-cask install opera 2> /dev/null
-cask install sublime-text 2> /dev/null
-cask install the-unarchiver 2> /dev/null
-cask install transmission 2> /dev/null
-cask install virtualbox 2> /dev/null
-cask install vlc 2> /dev/null
-cask install namechanger 2> /dev/null
-cask install qlmarkdown 2> /dev/null
+# cask install dropbox 2> /dev/null
+# cask install google-chrome 2> /dev/null
+brew cask install imagealpha 2> /dev/null
+brew cask install imageoptim 2> /dev/null
+brew cask install iterm2 2> /dev/null
+brew cask install miro-video-converter 2> /dev/null
+brew cask install opera 2> /dev/null
+# cask install sublime-text 2> /dev/null
+brew cask install the-unarchiver 2> /dev/null
+brew cask install transmission 2> /dev/null
+brew cask install vlc 2> /dev/null
+brew cask install namechanger 2> /dev/null
