@@ -1,80 +1,85 @@
+#!/usr/bin/env bash
+
 # Install command-line tools using Homebrew
 # Usage: `brew bundle Brewfile`
 
 # Make sure we’re using the latest Homebrew
-update
+brew update
 
 # Upgrade any already-installed formulae
-upgrade
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils
+brew install coreutils
 #sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`
-install moreutils
+brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
-install findutils
+brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`
-install gnu-sed --default-names
+brew install gnu-sed --default-names
 # Install Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
-install bash
-install bash-completion
+brew install bash
+brew install bash-completion
 
 # Install wget with IRI support
-install wget --enable-iri
+brew install wget --enable-iri
 
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
-install ringojs
-install narwhal
+brew install ringojs
+brew install narwhal
 
 # Install more recent versions of some OS X tools
-install vim --override-system-vi
-install homebrew/dupes/grep
-install homebrew/dupes/screen
-install homebrew/php/php55 --with-gmp
+brew install vim --override-system-vi
+brew install homebrew/dupes/grep
+brew install homebrew/dupes/screen
+brew install homebrew/php/php55 --with-gmp
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups
-install bfg
-install binwalk
-install dex2jar
-install dns2tcp
-install fcrackzip
-install foremost
-install hashpump
-install hydra
-install john
-install knock
-install nmap
-install pngcheck
-install sqlmap
-install tcpflow
-install tcpreplay
-install ucspi-tcp # `tcpserver` et al.
-install xpdf
-install xz
+brew install bfg
+brew install binutils
+brew install binwalk
+brew install cifer
+brew install dex2jar
+brew install dns2tcp
+brew install fcrackzip
+brew install foremost
+brew install hashpump
+brew install hydra
+brew install john
+brew install knock
+brew install nmap
+brew install pngcheck
+brew install sqlmap
+brew install tcpflow
+brew install tcpreplay
+brew install tcptrace
+brew install ucspi-tcp # `tcpserver` et al.
+brew install xpdf
+brew install xz
 
 # Install other useful binaries
-install ack
+brew install ack
 #install exiv2
-install git
-install imagemagick --with-webp
-install lynx
-install node # This installs `npm` too using the recommended installation method
-install p7zip
-install pigz
-install pv
-install rename
-install rhino
-install tree
-install webkit2png
-install zopfli
-install ssh-copy-id
+brew install git
+brew install imagemagick --with-webp
+brew install lynx
+brew install node # This installs `npm` too using the recommended installation method
+brew install p7zip
+brew install pigz
+brew install pv
+brew install rename
+brew install rhino
+brew install tree
+brew install webkit2png
+brew install zopfli
+brew install ssh-copy-id
 
-install homebrew/versions/lua52
+brew install homebrew/versions/lua52
 
 # Remove outdated versions from the cellar
-cleanup
+brew cleanup
