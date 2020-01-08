@@ -14,11 +14,6 @@ function grep     ; command grep --color=auto $argv ; end
 alias li=lighthouse
 alias lperf 'lighthouse --only-categories=performance'
 
-# mv, rm, cp
-alias mv 'command gmv --interactive --verbose'
-alias rm 'command grm --interactive --verbose'
-alias cp 'command gcp --interactive --verbose'
-
 alias chmox='chmod +x'
 
 alias cask='brew cask' # i <3 u cask

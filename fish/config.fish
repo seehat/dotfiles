@@ -1,13 +1,8 @@
-set default_user "paulirish"
-set default_machine "paulirish-macbookair2"
-
+set default_user "christian"
 
 source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
-source ~/.config/fish/chpwd.fish
 source ~/.config/fish/functions.fish
-source ~/.config/fish/chromium.fish
-source ~/.config/fish/conf.d/scmpuff.fish
 
 # for things not checked into git..
 if test -e "$HOME/.extra.fish";
@@ -18,22 +13,6 @@ end
 set fish_function_path $HOME/.config/fish/functions/pure/functions/ $fish_function_path
 set fish_function_path $HOME/.config/fish/functions/pure/ $fish_function_path
 source $HOME/.config/fish/functions/pure/conf.d/pure.fish
-
-export GOPATH=$HOME/.go/
-
-# Completions
-function make_completion --argument-names alias command
-    echo "
-    function __alias_completion_$alias
-        set -l cmd (commandline -o)
-        set -e cmd[1]
-        complete -C\"$command \$cmd\"
-    end
-    " | .
-    complete -c $alias -a "(__alias_completion_$alias)"
-end
-
-make_completion g 'git'
 
 
 # Readline colors
@@ -101,14 +80,3 @@ set -gx LESS_TERMCAP_se \e'[0m'           # end standout-mode
 set -gx LESS_TERMCAP_so \e'[38;5;246m'    # begin standout-mode - info box
 set -gx LESS_TERMCAP_ue \e'[0m'           # end underline
 set -gx LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
-
-
-# this currently messes with newlines in my prompt. lets debug it later.
-# test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
-
-# tabtab source for yarn package
-# uninstall by removing these lines or running `tabtab uninstall yarn`
-[ -f /Users/paulirish/.config/yarn/global/node_modules/tabtab/.completions/yarn.fish ]; and . /Users/paulirish/.config/yarn/global/node_modules/tabtab/.completions/yarn.fish
-
-# rvm default
-

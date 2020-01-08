@@ -1,0 +1,26 @@
+IMAPAccount uberspace
+Host hamal.uberspace.de
+User praxis@physiogyn.at
+Pass physio01gyn_madergrafisch
+
+IMAPStore uberspace-remote
+Account uberspace
+
+IMAPAccount allinkl
+Host w0195464.kasserver.com
+User praxis@physiogyn.at
+Pass physio01gyn_madergrafisch
+
+IMAPStore allinkl-remote
+Account allinkl
+
+MaildirStore local
+Path ~/maildir/
+Inbox ~/maildir/Inbox
+
+Channel transfer
+Master :uberspace-remote:
+Slave :allinkl-remote:
+Patterns *
+Sync Pull
+Create Slave

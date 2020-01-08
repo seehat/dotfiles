@@ -18,7 +18,7 @@ alias gst='git status '
 alias ga='git add '
 alias gc='git commit'
 alias go='git checkout '
-alias gca='git commit -a -m '
+alias gca='git add -A && git commit -a -m '
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
